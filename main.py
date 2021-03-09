@@ -102,4 +102,4 @@ if __name__=="__main__":
             if db.empty():
                 db.insert_id(0)
             else:
-                db.increment_id()  
+                db.increment_id()
