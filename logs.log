@@ -1,0 +1,25 @@
+INFO:werkzeug: * Running on http://0.0.0.0:3000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 118-141-183
+INFO:werkzeug: * Running on http://0.0.0.0:3000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 153-717-905
+INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 13:20:28] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 13:20:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 13:21:03] "[33mGET /inc/ HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/app/main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 153-717-905
+INFO:werkzeug: * Detected change in '/app/main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 153-717-905
+INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 13:21:49] "[37mGET /inc/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 13:22:04] "[37mGET /id/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 13:22:28] "[37mGET /inc/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 13:22:35] "[37mGET /id/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 13:30:14] "[37mGET /inc/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 13:30:21] "[37mGET /id/ HTTP/1.1[0m" 200 -

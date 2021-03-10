@@ -1,0 +1,25 @@
+version: "3.2"
+
+services:
+  db:
+    container_name: local_postgres
+    image: postgres
+    env_file: .env
+    networks:
+      - dbnet
+
+  flask_app:
+    container_name: flask
+    build: ./app
+    depends_on:
+      - db
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+    networks: 
+      - dbnet
+    command: sh -c "python /app/main.py"
+
+networks: 
+  dbnet: {}
