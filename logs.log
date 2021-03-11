@@ -23,3 +23,70 @@ INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 13:22:28] "[37mGET /inc/ HTTP/1.1[0m
 INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 13:22:35] "[37mGET /id/ HTTP/1.1[0m" 200 -
 INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 13:30:14] "[37mGET /inc/ HTTP/1.1[0m" 200 -
 INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 13:30:21] "[37mGET /id/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 14:30:07] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 14:30:19] "[37mGET /inc/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 14:30:28] "[37mGET /id/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 15:26:00] "[37mGET /inc/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 15:26:08] "[37mGET /id/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:3000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-661-865
+INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 16:29:09] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 16:29:25] "[35m[1mGET /inc/ HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 16:29:26] "[37mGET /inc/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 16:29:26] "[37mGET /inc/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 16:29:26] "[37mGET /inc/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 16:29:29] "[37mGET /inc/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 16:29:29] "[37mGET /inc/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [10/Mar/2021 16:29:30] "[37mGET /inc/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:3000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 209-319-039
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:29:56] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:30:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:30:07] "[35m[1mGET /inc/ HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:30:08] "[37mGET /inc/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:30:08] "[37mGET /inc/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:30:08] "[37mGET /inc/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:30:15] "[37mGET /inc/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:30:15] "[37mGET /inc/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/app/main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 209-319-039
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:32:32] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:32:34] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:32:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:32:41] "[37mGET /inc/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:32:48] "[37mGET /id/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:33:03] "[37mGET /inc/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:33:11] "[37mGET /id/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:33:17] "[37mGET /inc/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:33:23] "[37mGET /id/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/app/main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 209-319-039
+INFO:werkzeug: * Detected change in '/app/postgresql_person.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 209-319-039
+INFO:werkzeug: * Detected change in '/app/postgresql_person.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 209-319-039
+INFO:werkzeug: * Detected change in '/app/postgresql_person.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:3000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 209-319-039
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:40:24] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:40:49] "[37mGET /inc/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:41:00] "[37mGET /id/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:41:07] "[37mGET /inc/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:41:13] "[37mGET /id/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:41:19] "[37mGET /inc/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [11/Mar/2021 09:41:24] "[37mGET /id/ HTTP/1.1[0m" 200 -
