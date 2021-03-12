@@ -5,7 +5,6 @@ from flask import Flask, render_template, request
 logging.basicConfig(filename='logs.log', level=logging.DEBUG)
 
 db = PostgreSQL()
-
 if db.connect():
     if db.create_table():
         if db.empty():
