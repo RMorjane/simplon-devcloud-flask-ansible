@@ -2,15 +2,27 @@
   hosts: morjane-vm
   become: yes
   become_method: sudo
-  remote_user: morjane
+  gather_facts: yes
+  #force_apt_get: yes
+  remote_user: azureuser
 
   tasks:
+
+    - name: Install Postgresql server
+      apt: name=postgresql
+
+    - name: Install Postgresql client
+      apt: name=postgresql-client
+
+    - name: Ensure the PostgreSQL service is running
+      service: name=postgresql state=started enabled=yes
 
     - name: Install Git
       apt: name=git state=latest
 
     - name: Install flask ripository
-      command: chdir=/home/morjane/ git clone https://github.com/RMorjane/simplon-devcloud-flask-ansible.git flask_app
+      shell: rm -Rf flask_app
+      shell: chdir=/home/azureuser/ git clone https://github.com/RMorjane/simplon-devcloud-flask-ansible.git flask_test
 
     - name: Install aptitude using apt
       apt: name=aptitude state=latest update_cache=yes force_apt_get=yes
@@ -18,19 +30,31 @@
     - name: Install required system packages
       apt: name={{ item }} state=latest update_cache=yes
       loop: ['apt-transport-https', 'ca-certificates', 'curl', 'software-properties-common', 'python3-pip', 'virtualenv', 'python3-setuptools']
-
+      
     - name: Add Docker GPG apt Key
       apt_key:
         url: https://download.docker.com/linux/ubuntu/gpg
         state: present
 
-    - name: Update apt and install docker-ce
-      apt: update_cache=yes name=docker-ce state=latest
+    - name: Update apt and install docker.io
+      apt: update_cache=yes name=docker.io state=latest
       
-    - name: Install docker-compose
-      shell: curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-      shell: chmod +x /usr/local/bin/docker-compose
-      shell: docker-compose --version
+    - name: Install or upgrade docker-compose
+      get_url: 
+        url : "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-Linux-x86_64"
+        dest: /usr/local/bin/docker-compose
+        mode: 'a+x'
+        force: yes
+      when: >
+        docker_compose_current_version is not defined
+        or docker_compose_current_version is version(docker_compose_version, '<')
 
-    - name: Install and execute flask app using docker-compose
-      command: docker-compose up --build
+    - name: Check current docker-compose version
+      command: docker-compose --version
+      register: docker_compose_vsn
+      changed_when: false
+      failed_when: false
+      check_mode: no
+
+    - name: Go to the folder and execute docker-compose
+      shell: chdir=/home/azureuser/flask_test/ docker-compose up --build
