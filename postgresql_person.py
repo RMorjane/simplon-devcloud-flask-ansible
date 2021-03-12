@@ -4,7 +4,6 @@ class PostgreSQL:
 
     def __init__(self):
         self.connection = None
-        self.isconnected = False
         self.id = 0
 
     def connect(self):
@@ -16,10 +15,10 @@ class PostgreSQL:
             cnt_string = "host={0} user={1} dbname={2} password={3}".format(host,user,dbname,password)
             self.connection = psycopg2.connect(cnt_string)
             print("Connexion réussie : " + str(self.connection))
-            self.isconnected = True
+            return True
         except (Exception, psycopg2.Error) as error:
             print("Impossible de se connecter au serveur postgres : " + str(error))
-            self.isconnected = False
+            return False
 
     def create_table(self):
         try:
