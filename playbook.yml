@@ -17,9 +17,6 @@
     - name: Ensure the PostgreSQL service is running
       service: name=postgresql state=started enabled=yes
 
-    - name: Install Git
-      apt: name=git state=latest
-
     - name: Install flask ripository
       shell: rm -Rf flask_app
       shell: chdir=/home/azureuser/ git clone https://github.com/RMorjane/simplon-devcloud-flask-ansible.git flask_test
@@ -35,26 +32,6 @@
       apt_key:
         url: https://download.docker.com/linux/ubuntu/gpg
         state: present
-
-    - name: Update apt and install docker.io
-      apt: update_cache=yes name=docker.io state=latest
-      
-    - name: Install or upgrade docker-compose
-      get_url: 
-        url : "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-Linux-x86_64"
-        dest: /usr/local/bin/docker-compose
-        mode: 'a+x'
-        force: yes
-      when: >
-        docker_compose_current_version is not defined
-        or docker_compose_current_version is version(docker_compose_version, '<')
-
-    - name: Check current docker-compose version
-      command: docker-compose --version
-      register: docker_compose_vsn
-      changed_when: false
-      failed_when: false
-      check_mode: no
 
     - name: Go to the folder and execute docker-compose
       shell: chdir=/home/azureuser/flask_test/ docker-compose up --build

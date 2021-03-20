@@ -5,6 +5,7 @@ from flask import Flask, render_template, request
 logging.basicConfig(filename='logs.log', level=logging.DEBUG)
 
 db = PostgreSQL()
+
 if db.connect():
     if db.create_table():
         if db.empty():
@@ -25,6 +26,6 @@ def increment():
 def current():
     if db.get_id():
         return "curent id : " + str(db.id)
-
+      
 if __name__=="__main__":
     app.run(host="0.0.0.0", port=3000, debug=True)
