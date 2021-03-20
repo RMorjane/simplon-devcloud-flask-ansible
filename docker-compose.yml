@@ -4,6 +4,7 @@ services:
   db:
     container_name: local_postgres
     image: postgres
+    restart: always
     env_file: .env
     networks:
       - dbnet
