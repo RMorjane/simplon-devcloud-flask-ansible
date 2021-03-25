@@ -129,3 +129,17 @@ INFO:werkzeug:172.21.0.1 - - [12/Mar/2021 03:04:02] "[37mGET /inc/ HTTP/1.1[0m
 INFO:werkzeug:172.21.0.1 - - [12/Mar/2021 03:04:11] "[37mGET /id/ HTTP/1.1[0m" 200 -
 INFO:werkzeug:172.21.0.1 - - [12/Mar/2021 03:04:19] "[37mGET /inc/ HTTP/1.1[0m" 200 -
 INFO:werkzeug:172.21.0.1 - - [12/Mar/2021 03:04:26] "[37mGET /id/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:3000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 209-319-039
+INFO:werkzeug:172.21.0.1 - - [21/Mar/2021 01:44:55] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [21/Mar/2021 01:44:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://0.0.0.0:3000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 209-319-039
+INFO:werkzeug:172.21.0.1 - - [21/Mar/2021 01:46:20] "[37mGET /inc/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [21/Mar/2021 01:46:29] "[37mGET /id/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [21/Mar/2021 01:46:38] "[37mGET /inc/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [21/Mar/2021 01:46:45] "[37mGET /id/ HTTP/1.1[0m" 200 -
