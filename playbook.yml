@@ -3,35 +3,13 @@
   become: yes
   become_method: sudo
   gather_facts: yes
-  #force_apt_get: yes
-  remote_user: azureuser
+  remote_user: morjane
 
   tasks:
 
-    - name: Install Postgresql server
-      apt: name=postgresql
-
-    - name: Install Postgresql client
-      apt: name=postgresql-client
-
-    - name: Ensure the PostgreSQL service is running
-      service: name=postgresql state=started enabled=yes
-
     - name: Install flask ripository
       shell: rm -Rf flask_app
-      shell: chdir=/home/azureuser/ git clone https://github.com/RMorjane/simplon-devcloud-flask-ansible.git flask_test
-
-    - name: Install aptitude using apt
-      apt: name=aptitude state=latest update_cache=yes force_apt_get=yes
-
-    - name: Install required system packages
-      apt: name={{ item }} state=latest update_cache=yes
-      loop: ['apt-transport-https', 'ca-certificates', 'curl', 'software-properties-common', 'python3-pip', 'virtualenv', 'python3-setuptools']
-      
-    - name: Add Docker GPG apt Key
-      apt_key:
-        url: https://download.docker.com/linux/ubuntu/gpg
-        state: present
+      shell: chdir=/home/morjane/ git clone https://github.com/RMorjane/simplon-devcloud-flask-ansible.git flask_app
 
     - name: Go to the folder and execute docker-compose
-      shell: chdir=/home/azureuser/flask_test/ docker-compose up --build
+      shell: chdir=/home/morjane/flask_app/ docker-compose up --build

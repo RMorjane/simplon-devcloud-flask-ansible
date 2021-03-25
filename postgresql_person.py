@@ -11,7 +11,7 @@ class PostgreSQL:
             host = "local_postgres"
             user = "postgres"
             dbname = "postgres"
-            password = "test"
+            password = "postgres"
             cnt_string = "host={0} user={1} dbname={2} password={3}".format(host,user,dbname,password)
             self.connection = psycopg2.connect(cnt_string)
             print("Connexion réussie : " + str(self.connection))
