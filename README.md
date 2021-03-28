@@ -2,6 +2,17 @@
 
 This is a Flask Application deployed with Ansible in Azure Virtual Machine using Postgresql database.
 
+Accessing to the home page : 
+
+![image](https://user-images.githubusercontent.com/71873995/112757576-9c293e80-8fea-11eb-9a40-2d8d40e6cb0a.png)
+
+Accessing to the incrementing id page : 
+
+![image](https://user-images.githubusercontent.com/71873995/112757615-c7ac2900-8fea-11eb-91e0-6141da15b94b.png)
+
+Accessing to the display id page : 
+
+![image](https://user-images.githubusercontent.com/71873995/112757643-edd1c900-8fea-11eb-8d5b-e30fbad6afbb.png)
 
 
 ## Installation
