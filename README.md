@@ -57,7 +57,7 @@ networks:
 Use the following command line :
 
 ```bash
-ansible-playbook -i hosts playbook.yml --key-file morjane_key.pem
+ansible-playbook -i hosts playbook.yml --key-file rmorjane_key.pem
 ```
 
 ## Technologies
