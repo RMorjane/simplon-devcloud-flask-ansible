@@ -7,7 +7,8 @@ This is a Flask Application deployed with Ansible in Azure Virtual Machine using
 ## Installation
 
 playbook.yml :
-````- name: Install flask app with postgres database
+```
+- name: Install flask app with postgres database
   hosts: morjane-vm
   become: yes
   become_method: sudo
@@ -21,10 +22,11 @@ playbook.yml :
       shell: chdir=/home/morjane/ git clone https://github.com/RMorjane/simplon-devcloud-flask-ansible.git flask_app
 
     - name: Go to the folder and execute docker-compose
-      shell: chdir=/home/morjane/flask_app/ docker-compose up --build````
+      shell: chdir=/home/morjane/flask_app/ docker-compose up --build
+```
 
 docker-compose file : 
-````
+```
 version: "3.2"
 
 services:
@@ -50,7 +52,7 @@ services:
 
 networks:
   dbnet: {}
-````
+```
 
 Use the following command line :
 
